@@ -26,19 +26,16 @@ Desenhe, mude a cor e tamanho do pincel, carregue imagens e salve sua obra-prima
 pip install fastapi uvicorn
 
 Execute o projeto com:
-
 bash
-Copiar
-Editar
 python canvas.py
+
+ 
 Abra o navegador e vá para:
 
 arduino
-Copiar
-Editar
 http://localhost:8000
 
-canvas-com-a-mini/
+canvas-com/
 ├── canvas.py                # Código principal FastHTML
 ├── static/
 │   ├── estilo.css           # Arquivo de estilos
