@@ -49,8 +49,23 @@ canvas-com-a-mini/
 │   ├── estilo.css           # Arquivo de estilos
 │   └── script.js            # Código JavaScript com as lógicas do canvas
 ```
+---
+
+# 🔧Para desenvolvedores:
+
+Este projeto utiliza FastAPI com FastHTML para gerar páginas dinâmicas que manipulam elementos gráficos via JavaScript puro. O foco está em desenhar em camadas sobre o canvas HTML.
+
 
 ---
+
+## Entrada para usuarios:
+
+| Elemento          | Tipo     | ID             | Função                                        |
+|-------------------|----------|----------------|------------------------------------------------|
+| 🎨 Cor do Pincel   | `<input>`| `color-picker` | Define a cor usada para desenhar               |
+| 🔧 Tamanho do Pincel | `<input>`| `brush-size`   | Controla a espessura do traço (1–50)           |
+| 🖼️ Upload de imagem | `<input>`| `upload-img`   | Define a imagem de fundo carregada pelo usuário|
+| 🖱️ Área de desenho | `<canvas>`| `canvas-camada1` | Camada superior usada para desenhar         |
 
 ## 🧁 Créditos
 
