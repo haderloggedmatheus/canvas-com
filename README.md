@@ -5,6 +5,15 @@
 
 ---
 
+## Tecnologias usadas:
+
+- Python 3.10+
+- FastAPI
+- FastHTML
+- JavaScript puro
+- HTML5 / CSS3
+
+---
 ## ✨ Funcionalidades
 
 - 🎨 **Canvas com pincel suave**
@@ -58,14 +67,14 @@ Este projeto utiliza FastAPI com FastHTML para gerar páginas dinâmicas que man
 
 ---
 
-## Entrada para usuarios:
+## 📥 Entrada para usuarios:
 
-| Elemento          | Tipo     | ID             | Função                                        |
-|-------------------|----------|----------------|------------------------------------------------|
-| 🎨 Cor do Pincel   | `<input>`| `color-picker` | Define a cor usada para desenhar               |
-| 🔧 Tamanho do Pincel | `<input>`| `brush-size`   | Controla a espessura do traço (1–50)           |
-| 🖼️ Upload de imagem | `<input>`| `upload-img`   | Define a imagem de fundo carregada pelo usuário|
-| 🖱️ Área de desenho | `<canvas>`| `canvas-camada1` | Camada superior usada para desenhar         |
+| Elemento            | Tipo HTML   | Tipo de dado  | ID               | Função                                       |
+|---------------------|-------------|---------------|------------------|----------------------------------------------|
+| 🎨 Cor do Pincel     | `<input>`   | `string (hex)` | `color-picker`    | Define a cor do traço ao desenhar            |
+| 🖌️ Espessura do Traço | `<input>`   | `number`       | `brush-size`      | Define a largura do traço no canvas          |
+| 🗑️ Limpar Tela        | `<button>`  | `event`        | `clear-canvas`    | Apaga todo o conteúdo desenhado              |
+| 💾 Salvar Desenho     | `<button>`  | `event`        | `save-button`     | Converte o desenho em imagem e exibe na tela |
 
 
 ## 📤 Saídas (Outputs)
@@ -75,6 +84,8 @@ Este projeto utiliza FastAPI com FastHTML para gerar páginas dinâmicas que man
 | 💾 `meu_desenho.png`       | Arquivo PNG  | Imagem combinando a base e a camada de desenho                           |
 | 🖼️ Miniaturas na galeria  | `<img>` tag  | Imagens salvas exibidas via `localStorage` no final da página            |
 | 📁 `canvas.toDataURL()`    | Base64       | Representação da imagem final para download                              |
+
+Nota: canvas.toDataURL() gera uma string Base64 que pode ser usada para armazenar a imagem no banco de dados ou converter em blob para download.
 
 Essas saídas são geradas automaticamente ao interagir com os botões **Salvar**, **Desfazer** e **Upload**.
 
