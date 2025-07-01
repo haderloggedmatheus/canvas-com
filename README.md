@@ -67,6 +67,18 @@ Este projeto utiliza FastAPI com FastHTML para gerar páginas dinâmicas que man
 | 🖼️ Upload de imagem | `<input>`| `upload-img`   | Define a imagem de fundo carregada pelo usuário|
 | 🖱️ Área de desenho | `<canvas>`| `canvas-camada1` | Camada superior usada para desenhar         |
 
+
+## 📤 Saídas (Outputs)
+
+| Saída                     | Tipo         | Descrição                                                                 |
+|---------------------------|--------------|---------------------------------------------------------------------------|
+| 💾 `meu_desenho.png`       | Arquivo PNG  | Imagem combinando a base e a camada de desenho                           |
+| 🖼️ Miniaturas na galeria  | `<img>` tag  | Imagens salvas exibidas via `localStorage` no final da página            |
+| 📁 `canvas.toDataURL()`    | Base64       | Representação da imagem final para download                              |
+
+Essas saídas são geradas automaticamente ao interagir com os botões **Salvar**, **Desfazer** e **Upload**.
+
+
 ## 🧁 Créditos
 
 Feito com carinho por **Mestre** e a ajudante **Mini Yaemori** 🐾✨  
